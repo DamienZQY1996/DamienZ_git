@@ -71,3 +71,17 @@ git支持多种协议，默认的‘git://’使用ssh，但也可以使用‘ht
 
 开发一个新feature，最好新建一个分支。
 如果要丢弃一个没有被合并过的分支，可以通过‘git branch -D <name>’强行删除。
+
+
+多人协作的工作模式：
+1.试图用‘git push origin <branch-name>’推送自己的修改；
+2.如果推送失败，则因为远程分支比你的本地更新，需要先用‘git pull’试图合并；
+3.如果合并有冲突，则解决冲突，并在本地提交；
+4.没有冲突或者解决掉冲突后，再用‘git push origin <branch-name>’推送就能成功。
+注意：如果‘git pull’提示‘no tracking information’，则说明本地分支和远程分支的链接关系没有创建，用命令‘git branch --set-upstream-to <branch-name> origin/<branch-name>’。
+
+
+查看远程库信息，使用‘git remote -v’
+本地新建的分支如果不推送到远程，对其他人就是不可见
+在本地创建和远程分支对应的分支，使用‘git switch -c branch-name origin/branch-name’，本地和远程分支名称最好一致
+
