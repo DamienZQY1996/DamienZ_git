@@ -48,3 +48,8 @@ git支持多种协议，默认的‘git://’使用ssh，但也可以使用‘ht
 创建+切换分支：‘git switch -c <name>’（推荐）或‘git checkout -b <name>’
 合并某分支到当前分支：‘git merge <name>’
 删除分支：‘git branch -d <name>’
+
+
+当git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+解决冲突就是把git合并失败的文件手动编辑为我们希望的内容，再提交。
+用git log --graph命令可以看到分支合并图。
