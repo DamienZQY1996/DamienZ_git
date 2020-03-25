@@ -89,3 +89,8 @@ git支持多种协议，默认的‘git://’使用ssh，但也可以使用‘ht
 rebase操作可以把本地未push的分叉提交历史整理成直线
 rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比
 
+
+命令‘git tag <tagname> <commit_id>’用于新建一个标签，指向commit_id
+命令‘git tag -a <tagname> -m "xxxxx" <commit_id>’可以指定标签信息
+命令‘git tag’可以查看所有标签
+
