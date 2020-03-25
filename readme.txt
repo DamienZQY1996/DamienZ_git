@@ -24,3 +24,7 @@ git跟踪并管理的是修改，并非文件。
 
 场景1：将版本库中的文件删除，用命令’git rm‘和’git commit‘。
 场景2：仅删除工作区中文件，用命令’rm‘；恢复删除文件到最新版本：’git checkout -- <file>‘。注意：从来没有被添加到版本库就被删除的文件，是无法恢复的。
+
+关联远程库，使用命令‘git remote add origin git@server-name:path/repo-name.git’。
+关联后，使用命令‘git push -u origin master’第一次推送master分支的所有内容。
+此后，每次本地提交后，只要有必要，就可以使用命令‘git push origin master’推送最新修改。
