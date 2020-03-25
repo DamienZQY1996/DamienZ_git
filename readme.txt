@@ -28,3 +28,6 @@ git跟踪并管理的是修改，并非文件。
 关联远程库，使用命令‘git remote add origin git@server-name:path/repo-name.git’。
 关联后，使用命令‘git push -u origin master’第一次推送master分支的所有内容。
 此后，每次本地提交后，只要有必要，就可以使用命令‘git push origin master’推送最新修改。
+
+克隆远程库，首先必须知道仓库的地址，然后使用命令‘git clone’克隆。
+git支持多种协议，默认的‘git://’使用ssh，但也可以使用‘https://’等其他协议；使用‘https://’除了速度慢，还有最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。
