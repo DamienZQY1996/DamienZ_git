@@ -104,3 +104,9 @@ rebase的目的是使得我们在查看历史提交的变化时更容易，因�
 忽略某些文件，需要编写.gitignore
 .gitignore文件本身要放到版本库里，并且可以对.gitignore做版本管理
 
+
+配置别名：‘git config --global alias.<new_name>  <old_name>’
+配置文件：加上‘--global’是针对当前用户起作用，如果不加，只针对当前的仓库起作用
+配置文件位置：仓库的配置文件放在‘.git/config’文件中，用户的配置文件放在用户主目录下的一个隐藏文件‘.gitconfig’中
+
+
