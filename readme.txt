@@ -100,3 +100,7 @@ rebase的目的是使得我们在查看历史提交的变化时更容易，因�
 命令‘git tag -d <tagname>’可以删除一个本地标签
 命令‘git push origin :refs/tags/<tagname>’可以删除一个远程标签
 
+
+忽略某些文件，需要编写.gitignore
+.gitignore文件本身要放到版本库里，并且可以对.gitignore做版本管理
+
